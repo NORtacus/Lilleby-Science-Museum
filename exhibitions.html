@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css" /> 
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to Lilleby Science Museum - Homepage">
+      <meta name="keywords" content="lilleby, science, museum, norway, explore, information, homepage, exhibitions, events, visit, us, learn">
+       <title>Lilleby Science Museum - Homepage</title>
+   </head>
+   <body>
+    <header>
+      <nav>
+         <div class="logo">
+            <a href=index.html><img src="images/logo.jpg" alt="logo" style="width:100%; height:auto; max-width:430px;"></a></style>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a class="active" href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="events.html">Events </a></li>
+            <li><a href="visit.html">Visit</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="upper text">
+      <h4>This month Exhibition</h4>
+<p>Here are a lot of exciting exhibitions for children and adult`s in every age! Find you`r today</p>
+<br>
+</div>
+<div class="box-grid">
+  <div class="box-flex">
+    <img class="box-img" src="images/andrew-ruiz-348421.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Cosmology</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-center">
+    <img class="box-img" src="images/ball-1010907_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Evolution</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-bottom">
+    <img class="box-img" src="images/billetto-editorial-334686.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Center</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-top-right">
+    <img class="box-img" src="images/celso-405219.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Top Right</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-center-left">
+    <img class="box-img" src="images/jesse-orrico-60373.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Center Left</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-bottom-right">
+    <img class="box-img" src="images/lab-512503_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Right</h5>
+  </div><!-- end: box-flex -->
+  <div class="box-flex box-flex-bottom-right">
+    <img class="box-img" src="images/lab-512503_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Right</h5>
+  </div>
+  <div class="box-flex box-flex-bottom-right">
+    <img class="box-img" src="images/lab-512503_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Right</h5>
+  </div>
+  <div class="box-flex box-flex-bottom-right">
+    <img class="box-img" src="images/lab-512503_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Right</h5>
+  </div>
+  <div class="box-flex box-flex-bottom-right">
+    <img class="box-img" src="images/lab-512503_1920.jpg" alt="test" width="250" height="300"/>
+    <h5 class="box-caption">Bottom Right</h5>
+  </div>
+</div><!-- end: box.grid -->
+
+
+<br>
+
+    </main>
+    <footer>
+      
+    </footer>
+   </body>
+
+
+   <style>
+
+* { box-sizing: border-box;}
+
+html {
+  font-size: 100%;
+}
+main {
+  padding: 2rem;
+  font-familiy: Verdana, Geneva, sans-serif;
+}
+/* The Container */
+.box-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  padding: 0px;
+}
+
+/* Styles for the caption overlays */
+/* Standard Box: Top Center */
+.box-flex {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #333333;
+  color: #d9d9d9;
+}
+
+/* Box: Center Center */
+.box-flex-center {
+  align-items: center;
+}
+
+/* Box: Bottom Center */
+.box-flex-bottom {
+  align-items: flex-end;
+}
+
+/* Box: Top Right */
+.box-flex-top-right {
+  justify-content: flex-end;
+}
+
+/* Box: Center Left */
+.box-flex-center-left {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Box: Bottom Right */
+.box-flex-bottom-right {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.box-img {
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+}
+
+.box-img:hover {
+  -webkit-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+.box-caption {
+  position: absolute;
+  max-width: 200px;
+  margin: 0;
+  padding: .5rem;
+  word-break: break-word;
+  font-size: 1.25rem;
+  background-color: rgba(0,0,0,.3);
+  color: #f2f2f2;
+}
+
+.box-caption:hover {
+  background-color: rgba(0,0,0,.5);
+  color: #e6e6e6;
+  transition: all ease .5s;
+}
+
+/* Styles for multiple caption overlays */
+
+/* align-self: flex-start */
+.align-start {
+  align-self: flex-start;
+}
+
+/* align-self: center */
+.align-center {
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+/* align-self: flex-end */
+.align-end {
+  align-self: flex-end;
+}
+
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #007CFF;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+</style>
+</html>

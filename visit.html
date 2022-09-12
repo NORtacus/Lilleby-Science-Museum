@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <link rel="icon" type="image/x-icon" href="images/favicon1.jpg">
+      <link type="text/css" rel="stylesheet" href="css/style.css" /> 
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to Lilleby Science Museum - Homepage">
+      <meta name="keywords" content="lilleby, science, museum, norway, explore, information, homepage, exhibitions, events, visit, us, learn">
+       <title>Lilleby Science Museum - Homepage</title>
+   </head>
+   <body>
+    <header>
+      <nav>
+         <div class="logo">
+            <a href=index.html><img src="images/logo.jpg" alt="logo" style="width:100%; height:auto; max-width:430px;"></a></style>
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="exhibitions.html">Exhibitions</a></li>
+            <li><a href="events.html">Events </a></li>
+            <li><a class="active" href="visit.html">Visit</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="upper text">
+      <h3>Plan your visit!</h3>
+      <br>
+<p><h4>Location</h4>
+    <br>
+    The museum is located at [student to include address].
+    <img src="images/map.jpg" width="200px" height="200px">
+    <br><br>
+    <h4>Admission</h4>
+    <br>
+    The entrance is free for all. 
+    There are guided tours of the museum that leave every hour. These tours are 70 NOK per person and include a handy printed guide of the museum. 
+    If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
+    <br><br>
+    <h4>Hours</h4>
+    <br>
+    <ul>
+    <li>Monday: Closed</li>
+    <li>Tuesday: 10:00 – 16:00</li>
+    <li>Wednesday: 10:00 – 16:00</li>
+    <li>Thursday: 10:00 – 16:00</li>
+    <li>Friday: 10:00 – 19:00</li>
+    <li>Saturday: 9:00 – 16:00</li>
+    <li>Sunday: 9:00 – 13:00</li>
+</ul>
+    <br><br>
+    <h4>Accessibility</h4>
+    <br>
+    The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.
+    <br><br>
+    <h4>Food and drink</h4>
+    <br>
+    There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
+    <br><br>
+    <h4>Shop</h4>
+    <br>
+    Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
+    </p>
+<br>
+</div>
+
+<br>
+
+    </main>
+    <footer>
+      
+    </footer>
+   </body>
+
+
+   <style>
+html {
+  font-size: 100%;
+}
+main {
+  padding: 2rem;
+  font-familiy: Verdana, Geneva, sans-serif;
+}
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #007CFF;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: -1;
+  width: 100%;
+  padding: 0 30px;
+  color: #1b1b1b;
+}
+.content div{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+</style>
+</html>
